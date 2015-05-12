@@ -6,6 +6,6 @@ class TaskManagerApp < Sinatra::Base
   # after set :root = "./.."
 # require 'pry'; binding.pry
   get '/' do
-    "Hello World"
+    erb :dashboard
   end
 end
