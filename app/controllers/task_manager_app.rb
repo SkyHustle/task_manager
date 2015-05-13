@@ -5,14 +5,13 @@ class TaskManagerApp < Sinatra::Base
   set :root, File.join(File.dirname(__FILE__), '..')
   # initially :root = "app/controllers/.."
   # after set :root = "./.."
-# require 'pry'; binding.pry
   get '/' do
     erb :dashboard
   end
 
   get '/tasks' do
     @tasks = TaskManager.all
-    erb :index  
+    erb :index
   end
 
   get '/tasks/new' do
