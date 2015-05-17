@@ -1,6 +1,23 @@
-<form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/>
-</form>
+<body>
+<!-- Header -->
+<a name="about"></a>
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <ul class="list-inline intro-social-buttons">
+                      <form action="/tasks" method="post">
+                        <h1>Enter a new task</h1>
+                        <input type='text' name='task[title]'><br/>
+                        <textarea name='task[description]'></textarea><br/>
+                        <input type='submit'/>
+                      </form>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
