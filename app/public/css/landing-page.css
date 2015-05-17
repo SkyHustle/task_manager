@@ -82,10 +82,29 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #f8f8f8;
 }
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+/* Form Styles */
+textarea, input{
+    color:#000;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    opacity: .8;
+    text-align: center;
+}
+
+textarea {
+    height: 100px;
+    width: 20%;
+}
+
+input {
+    height: 25px;
+    width: 20%;
 }
