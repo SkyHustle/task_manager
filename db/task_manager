@@ -6,7 +6,7 @@ tasks:
 - id: 2
   title: bike ride
   description: go for a ride ya bum
-- id: 3
-  title: bootstrap
-  description: throw some bootstrap on this **what....
-total: 3
+- id: 1
+  title: Haircut
+  description: Cut that muff
+total: 1
