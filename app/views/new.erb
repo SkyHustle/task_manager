@@ -7,14 +7,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <ul class="list-inline intro-social-buttons">
-                      <form action="/tasks" method="post">
-                        <h1>Enter a new task</h1>
-                        <input type='text' name='task[title]'><br/>
-                        <textarea name='task[description]'></textarea><br/>
-                        <input type='submit'/>
-                      </form>
-                    </ul>
+                  
+                  <form action="/tasks" method="post" id="main-form">
+                    <h1>Enter a new task</h1>
+                    <input type='text' name='task[title]' autofocus="autofocus" placeholder="Title"><br/>
+                    <textarea name='task[description]' placeholder="Description"></textarea><br/>
+                    <input type='submit'/>
+                  </form>
+                
                 </div>
             </div>
         </div>
