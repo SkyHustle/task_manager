@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-require 'tilt'
-require 'sinatra/base'
 
-gem 'sinatra'
+gem 'sinatra', require: 'sinatra/base'
 gem 'shotgun'
