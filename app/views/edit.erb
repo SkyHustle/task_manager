@@ -1,0 +1,21 @@
+<a name="about"></a>
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                  
+                  <form action="/tasks/<%= @task.id %>" method="post">
+                    <p>Edit</p>
+                    <input type="hidden" name="_method" value="PUT" />
+                    <input type='text' name='task[title]' value="<%= @task.title %>"/><br/>
+                    <textarea name='task[description]'><%= @task.description %></textarea><br/>
+                    <input type='submit'/>
+                  </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
