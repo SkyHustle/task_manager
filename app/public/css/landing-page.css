@@ -28,6 +28,10 @@ h6 {
     background-size: cover;
 }
 
+.intro-header #home-page {
+    height: 700px;
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;

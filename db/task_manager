@@ -1,12 +1,15 @@
 ---
 tasks:
 - id: 1
-  title: Shave
-  description: Shave the beard LJS
+  title: bball
+  description: love the sport
 - id: 2
-  title: bike ride
-  description: go for a ride ya bum
-- id: 1
-  title: Haircut
-  description: Cut that muff
-total: 1
+  title: Workout
+  description: Go to the gym!
+- id: 3
+  title: Give Rob a Haircut
+  description: Cut Robs hair.
+- id: 4
+  title: Shut Tray Up
+  description: Oh Tray
+total: 4
