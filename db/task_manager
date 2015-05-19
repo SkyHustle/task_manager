@@ -9,10 +9,4 @@ tasks:
 - id: 3
   title: Give Rob a Haircut
   description: Cut Robs hair.
-- id: 4
-  title: Shut Tray Up
-  description: Oh Tray
-- id: 5
-  title: ''
-  description: ''
 total: 5
