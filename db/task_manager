@@ -6,7 +6,7 @@ tasks:
 - id: 2
   title: Workout
   description: Go to the gym!
-- id: 3
-  title: Give Rob a Haircut
-  description: Cut Robs hair.
-total: 5
+- id: 6
+  title: Haircut
+  description: Get haircut
+total: 6
