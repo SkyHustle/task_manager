@@ -11,8 +11,8 @@
                         <ul class="list-inline intro-social-buttons tasks">
                             <li>
                               <a href="/tasks/<%= task.id %>" class="btn btn-default btn-lg"><%= task.id %>: <span class="network-name"><%= task.title %></span></a>
-                              <a href="/tasks/<%= task.id %>/edit" class="btn btn-default btn-lg">Edit</a>
                               
+                              <a href="/tasks/<%= task.id %>/edit" class="btn btn-default btn-lg">Edit</a>
                               
                               <form action="/tasks/<%= task.id %>" method="POST">
                                 <input type="hidden" name="_method" value="DELETE">
