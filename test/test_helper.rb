@@ -3,21 +3,18 @@ ENV["TASK_MANAGER_ENV"] ||= "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "minitest/autorun"
 require "minitest/pride"
+require "capybara"
+require "tilt/erb"
 
-class ModelTest < Minitest::Test 
+class Minitest::Test 
   def teardown
     TaskManager.delete_all
   end
 end
 
+# Only for Sinatra Apps
+Capybara.app = TaskManagerApp
 
-# 3 phases to testing
-
-# - setup
-#     - prepare the data that needs to exist for that test
-# - execution
-#     - perform certain pieces of functionality
-# - verify
-#     - check that you got the result you expected
-# - teardown
-#     - reset to original state
+class FeatureTest < Minitest::Test
+  include Capybara::DSL
+end

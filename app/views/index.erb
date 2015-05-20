@@ -8,7 +8,7 @@
                     <h1>All Tasks</h1>
                       <hr class="intro-divider">
                       <% @tasks.each do |task| %>
-                        <ul class="list-inline intro-social-buttons">
+                        <ul class="list-inline intro-social-buttons tasks">
                             <li>
                               <a href="/tasks/<%= task.id %>" class="btn btn-default btn-lg"><%= task.id %>: <span class="network-name"><%= task.title %></span></a>
                               <a href="/tasks/<%= task.id %>/edit" class="btn btn-default btn-lg">Edit</a>
@@ -18,8 +18,6 @@
                                 <input type="hidden" name="_method" value="DELETE">
                                 <input type="submit" value="Delete!"/ class="index-submit-btn">
                               </form>
-                              
-                            
                             </li>
                         </ul>
                       <% end %>

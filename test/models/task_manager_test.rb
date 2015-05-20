@@ -1,6 +1,6 @@
 require_relative '../test_helper'
 
-class TaskManagerTest < ModelTest
+class TaskManagerTest < Minitest::Test
   def test_it_creates_a_task
     TaskManager.create({ :title       => "a title", 
                          :description => "a description"})
@@ -17,7 +17,8 @@ class TaskManagerTest < ModelTest
                          :description => "a description1"})
     tasks = TaskManager.all
     assert_equal 2, tasks.count
-    assert_equal "a title", tasks[0].title
+    # assert_equal "a title", tasks.first.title
+    assert_equal ["a title", "a title1"], tasks.map(&:title)
   end
 
   def test_it_can_find_a_task_by_id
@@ -40,7 +41,7 @@ class TaskManagerTest < ModelTest
     assert_equal "do homework", task.description
 
     TaskManager.update(1, { :title       => "shopping", 
-                     :description => "go shopping"} )
+                     :description => "go shopping"})
     task = TaskManager.find(1)
     assert_equal "shopping", task.title
     assert_equal "go shopping", task.description    
@@ -55,7 +56,3 @@ class TaskManagerTest < ModelTest
     assert_equal 0, TaskManager.all.count
   end
 end
-
-
-
-
