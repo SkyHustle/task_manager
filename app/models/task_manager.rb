@@ -2,7 +2,11 @@ require 'yaml/store'
 
 class TaskManager
   def self.database
-    @database ||= YAML::Store.new("db/task_manager")
+    if ENV["TASK_MANAGER_ENV"] == 'test'
+      @database ||= YAML::Store.new("db/task_manager_test")
+    else
+      @database ||= YAML::Store.new("db/task_manager")
+    end
   end
 
   def self.create(task)
@@ -41,7 +45,7 @@ class TaskManager
     end
   end
 
-  def self.delete(id)
+  def self.destroy(id)
     database.transaction do
       database['tasks'].delete_if { |task| task["id"] == id }
     end
