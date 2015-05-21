@@ -3,10 +3,7 @@ tasks:
 - id: 1
   title: bball
   description: love the sport
-- id: 2
-  title: Workout
-  description: Go to the gym!
-- id: 6
-  title: Haircut
-  description: Get haircut
-total: 6
+- id: 7
+  title: Homework
+  description: "Finish Unit Testing\r\n"
+total: 7
