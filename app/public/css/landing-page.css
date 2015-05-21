@@ -35,6 +35,7 @@ h6 {
     /*background: url(../img/intro-bg.jpg) no-repeat center center;*/
     background: url(http://h.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/11/3021379-poster-p-1-the-curious-tale-of-the-to-do-list-and-how-to-craft-one-that-actually-works.jpg) no-repeat center center;
     background-size: cover cover;
+    opacity: .9;
 }
 
 .intro-header #home-page {
@@ -42,16 +43,39 @@ h6 {
 }
 
 .intro-message {
-    margin-top: 50px;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.home-page {
+    margin-top: 55px;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.task-page {
+    margin-top: -50px;
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
 }
 
 .intro-message > h1 {
-    margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+    color: #768785;
+}
+
+h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+    color: #768785;
+}
+
+h4 {
+    color: #FBB89E;
 }
 
 .intro-divider {
@@ -98,6 +122,11 @@ h6 {
 footer {
     padding: 20px 0;
     background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+a {
+ color: #8DB0AA;
 }
 
 p.copyright {
@@ -115,18 +144,18 @@ textarea, input{
 
 textarea {
     height: 100px;
-    width: 20%;
+    width: 40%;
 }
 
 input {
     height: 25px;
-    width: 20%;
+    width: 40%;
 }
 
-.index-submit-btn, input[type=submit] {
+input[type=submit] {
     margin-top: 10px;
     border-radius: 5px;
     height: 40px;
-    width: 40%;
+    width: 20%;
     background-color: rgb(90,90,90);
 }
