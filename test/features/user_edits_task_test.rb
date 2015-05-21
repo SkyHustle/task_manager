@@ -2,7 +2,8 @@ require_relative "../test_helper"
 
 class EditTaskTest < FeatureTest
   def test_user_can_edit_existing_task
-    TaskManager.create(title: "Practice Capybara", description: "tonight")
+    TaskManager.create({ :title       => "Shopping",
+                         :description => "Buy clothes"})
     visit "/tasks"
     click_link_or_button("Edit") # Ask!!
     assert "/tasks/1/edit", current_path # Ask Why test passes with or without 1

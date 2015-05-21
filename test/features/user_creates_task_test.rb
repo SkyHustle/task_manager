@@ -7,7 +7,6 @@ class NewTaskTest < FeatureTest
     fill_in("task[title]", :with => "Homework")
     fill_in("task[description]", :with => "Do Homework!")
     click_link_or_button("submit")
-
     assert_equal "/tasks", current_path
     within(".tasks li:first") do
       assert page.has_content?("Homework")
