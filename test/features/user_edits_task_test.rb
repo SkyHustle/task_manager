@@ -5,8 +5,8 @@ class EditTaskTest < FeatureTest
     TaskManager.create({ :title       => "Shopping",
                          :description => "Buy clothes"})
     visit "/tasks"
-    click_link_or_button("Edit") # Ask!!
-    assert "/tasks/1/edit", current_path # Ask Why test passes with or without 1
+    click_link_or_button("edit_button")
+    assert_equal "/tasks/1/edit", current_path
 
     fill_in("task[title]", :with => "Review")
     fill_in("task[description]", :with => "Go over classwork")

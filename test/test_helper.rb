@@ -5,6 +5,7 @@ require "minitest/autorun"
 require "minitest/pride"
 require "capybara"
 require "tilt/erb"
+require "pry"
 
 class Minitest::Test 
   def teardown

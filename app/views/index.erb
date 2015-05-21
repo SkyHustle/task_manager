@@ -12,11 +12,11 @@
                             <li>
                               <a href="/tasks/<%= task.id %>" class="btn btn-default btn-lg"><%= task.id %>: <span class="network-name"><%= task.title %></span></a>
                               
-                              <a href="/tasks/<%= task.id %>/edit" class="btn btn-default btn-lg">Edit</a>
+                              <a href="/tasks/<%= task.id %>/edit" class="btn btn-default btn-lg" id="edit_button">Edit</a>
                               
                               <form action="/tasks/<%= task.id %>" method="POST">
                                 <input type="hidden" name="_method">
-                                <input type="submit" value="Delete"/ class="index-submit-btn">
+                                <input type="submit" value="Delete" class="index-submit-btn">
                               </form>
                             </li>
                         </ul>

@@ -7,7 +7,8 @@ class DeletingTaskTest < FeatureTest
     visit "/tasks"
     assert page.has_content?("Shopping")
     click_link_or_button("Delete")
-    assert "/tasks", current_path
+    
+    assert_equal "/tasks", current_path
     refute page.has_content?("Shopping")
   end
 end

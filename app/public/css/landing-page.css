@@ -16,7 +16,15 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 16px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand {
+    color: #8DB0AA;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #8DB0AA;   
 }
 
 .intro-header {
@@ -24,8 +32,9 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(../img/intro-bg.jpg) no-repeat center center;*/
+    background: url(http://h.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/11/3021379-poster-p-1-the-curious-tale-of-the-to-do-list-and-how-to-craft-one-that-actually-works.jpg) no-repeat center center;
+    background-size: cover cover;
 }
 
 .intro-header #home-page {
@@ -33,6 +42,7 @@ h6 {
 }
 
 .intro-message {
+    margin-top: 50px;
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
