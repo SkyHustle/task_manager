@@ -23,7 +23,7 @@ h6 {
     color: #8DB0AA;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav li a {
     color: #8DB0AA;   
 }
 
@@ -49,7 +49,6 @@ h6 {
 }
 
 .home-page {
-    margin-top: 55px;
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;

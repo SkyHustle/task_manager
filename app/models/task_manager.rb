@@ -1,5 +1,3 @@
-# require 'yaml/store'
-
 class TaskManager
   def self.database
     if ENV["TASK_MANAGER_ENV"] == 'test'
@@ -40,7 +38,6 @@ class TaskManager
 
   def self.find(id)
     task = dataset.where(:id => id)
-    # binding.pry
     Task.new(task.to_a.first)
     # Task.new(raw_task(id))
   end
