@@ -8,8 +8,8 @@ class TaskManager
   end
 
   def self.create(task)
-    # dataset.insert(task)
-    dataset.insert(:title => task[:title], :description => task[:description])
+    dataset.insert(task)
+    # dataset.insert(:title => task[:title], :description => task[:description])
     # database.transaction do
     #   database['tasks'] ||= []
     #   database['total'] ||= 0
