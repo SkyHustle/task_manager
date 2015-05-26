@@ -14,6 +14,6 @@ class EditTaskTest < FeatureTest
     assert "/tasks", current_path
 
     assert page.has_content?("Review")
-    refute page.has_content?("Blah")
+    refute page.has_content?("Shopping")
   end
 end

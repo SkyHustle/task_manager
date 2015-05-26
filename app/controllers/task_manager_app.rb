@@ -1,5 +1,4 @@
 class TaskManagerApp < Sinatra::Base
-  # Our Server
   get '/' do
     erb :dashboard
   end
