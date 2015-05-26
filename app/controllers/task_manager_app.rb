@@ -40,4 +40,9 @@ class TaskManagerApp < Sinatra::Base
     TaskManager.destroy(id.to_i)
     redirect "/tasks"
   end
+
+  get '/visual' do
+    @tasks = TaskManager.all
+    erb :visual, :layout => false
+  end
 end

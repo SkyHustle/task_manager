@@ -1,0 +1,16 @@
+<h3>Tasks Database</h3>
+  <hr>
+    <table>
+      <tr>
+        <th>ID &nbsp;</th>
+        <th>TITLE &nbsp;</th>
+        <th>Description &nbsp;</th>
+      </tr>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.id %> &nbsp;</th>
+        <td><%= task.title %> &nbsp;</td>
+        <td><%= task.description %> &nbsp;</td>
+      </tr>
+    <% end %>
+</table>
